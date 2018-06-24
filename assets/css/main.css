@@ -925,7 +925,7 @@
 				top: 50%;
 				left: -3em;
 				width: calc(100% + 6em);
-				height: 1px;
+				height: 0px;
 				z-index: -1;
 				background: #c8cccf;
 			}
@@ -1093,7 +1093,7 @@
 				top: 50%;
 				left: -3em;
 				width: calc(100% + 6em);
-				height: 1px;
+				height: 0px;
 				z-index: -1;
 				background: #c8cccf;
 			}
@@ -1105,7 +1105,7 @@
 				width: 100%;
 			}
 
-				.main-single .avatar:before {
+				.main .avatar:before {
 					left: -2em;
 					width: calc(100% + 4em);
 				}
