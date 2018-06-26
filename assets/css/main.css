@@ -18,7 +18,7 @@
 	form, label, legend, table, caption, tbody,
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
-	footer, header, hgroup, menu, nav, output, ruby,
+	 header, hgroup, menu, nav, output, ruby,
 	section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -29,7 +29,7 @@
 	}
 
 	article, aside, details, figcaption, figure,
-	footer, header, hgroup, menu, nav, section {
+	 header, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -81,7 +81,7 @@
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 50%;
 		}
 
 	}
@@ -124,11 +124,11 @@
 
 		body:after {
 			content: '';
-			display: block;
+			display: table;
 			position: fixed;
 			top: 0;
 			left: 0;
-			width: 100%;
+			width: 10	0%;
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
@@ -373,6 +373,7 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+
 	}
 
 		input[type="text"]:invalid,
@@ -875,7 +876,7 @@
 
 /* Main */
 
-	#main {
+	.main {
 		-moz-transform-origin: 50% 50%;
 		-webkit-transform-origin: 50% 50%;
 		-ms-transform-origin: 50% 50%;
@@ -888,57 +889,62 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		padding: 4.5em 3em 3em 3em ;
+		padding: 4.5em 3em 3em 3em ; 
+		
 		background: #ffffff;
+		background-clip: content-box;
 		border-radius: 4px;
 		cursor: default;
 		max-width: 100%;
 		opacity: 0.95;
 		position: relative;
 		text-align: center;
-		width: 27em;
+	
+		float: left;
+		display: table;
+		width: 50%;
 	}
 
-		#main .avatar {
+		.main .avatar {
 			position: relative;
 			display: block;
 			margin-bottom: 1.5em;
 		}
 
-			#main .avatar img {
+			.main .avatar img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
 			}
 
-			#main .avatar:before {
+			.main .avatar:before {
 				content: '';
 				display: block;
 				position: absolute;
 				top: 50%;
 				left: -3em;
 				width: calc(100% + 6em);
-				height: 1px;
+				height: 0px;
 				z-index: -1;
 				background: #c8cccf;
 			}
 
 		@media screen and (max-width: 480px) {
 
-			#main {
+			.main {
 				padding: 4em 2em 2.5em 2em ;
 				width: 100%;
 			}
 
-				#main .avatar:before {
+				.main .avatar:before {
 					left: -2em;
 					width: calc(100% + 4em);
 				}
 
 		}
 
-		body.is-preload #main {
+		body.is-preload .main {
 			-moz-transform: rotateX(15deg);
 			-webkit-transform: rotateX(15deg);
 			-ms-transform: rotateX(15deg);
@@ -985,11 +991,12 @@
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: table;
+		
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
-		align-items: center;
+		align-items: center; 
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
@@ -1006,6 +1013,9 @@
 		min-height: 100%;
 		padding: 1.5em;
 		z-index: 2;
+		width: 100% 	
+		/*! max-width: 50%; */
+		 
 	}
 
 		#wrapper > * {
@@ -1014,7 +1024,7 @@
 
 		#wrapper:before {
 			content: '';
-			display: block;
+			display: inline-block;
 		}
 
 		@media screen and (max-width: 360px) {
@@ -1027,4 +1037,77 @@
 
 		body.is-ie #wrapper {
 			height: 100%;
+			width: 100%;
+		}
+
+.main-single {
+-moz-transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		-moz-transform: rotateX(0deg);
+		-webkit-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		transition: opacity 1s ease, transform 1s ease;
+		padding: 4.5em 3em 3em 3em ; 
+		
+		background: #ffffff;
+		background-clip: content-box;
+		border-radius: 4px;
+		cursor: default;
+		max-width: 100%;
+		opacity: 0.95;
+		position: relative;
+		text-align: center;
+	
+		/*float: left;*/
+		width: 50%;	
+		margin-left: auto;
+		margin-right: auto;
+
+		display: table;
+		
+}
+
+.main-single .avatar {
+			position: relative;
+			display: block;
+			margin-bottom: 1.5em;
+		}
+
+			.main-single .avatar img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 100%;
+				box-shadow: 0 0 0 1.5em #ffffff;
+			}
+
+			.main-single .avatar:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: -3em;
+				width: calc(100% + 6em);
+				height: 0px;
+				z-index: -1;
+				background: #c8cccf;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			.main-single {
+				padding: 4em 2em 2.5em 2em ;
+				width: 100%;
+			}
+
+				.main .avatar:before {
+					left: -2em;
+					width: calc(100% + 4em);
+				}
+
 		}

@@ -6,7 +6,7 @@
 
 /* Main */
 
-	#main {
+	.main {
 		@include vendor('transform-origin', '50% 50%');
 		@include vendor('transform', 'rotateX(0deg)');
 		@include vendor('transition', (
