@@ -6,7 +6,7 @@
 
 /* Wrapper */
 
-	#wrapper {
+	.wrapper {
 		@include vendor('display', 'flex');
 		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'space-between');

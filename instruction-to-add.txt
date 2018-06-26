@@ -1,0 +1,8 @@
+copy the blocks div part in html and change the details
+
+if adding a single profile add at the top near the Main comment with the class main-single
+
+if adding two profiles add at the top but with the class main
+
+make sure that the no of lines in the bio is max 5 (if not add appropriate breaks or add more content)
+make sure the content doesnt have more than 5 lines while displaying otherwise the alignment changes of the whole website
