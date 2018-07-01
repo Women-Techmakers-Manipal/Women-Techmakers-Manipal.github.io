@@ -1120,3 +1120,7 @@
 			padding-right: 4px;
 			padding-left: 4px;
 		}
+
+		.background-image {
+  		 transform: translate3d(0,0,0);  
+} 
