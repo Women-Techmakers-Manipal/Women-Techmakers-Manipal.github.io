@@ -1068,6 +1068,7 @@
 		width: 50%;	
 		margin-left: auto;
 		margin-right: auto;
+		
 
 		display: table;
 		
@@ -1110,4 +1111,9 @@
 					width: calc(100% + 4em);
 				}
 
+		}
+
+		.about {
+			height: 235px;
+			overflow-y: auto;
 		}
