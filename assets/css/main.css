@@ -172,6 +172,7 @@ textarea {
 
 .navbar img {
     width: 30%;
+    height: 13.5vh;
 }
 
 .social-links {
@@ -1329,4 +1330,33 @@ body.is-ie #wrapper {
         font-size: 3vh;
         padding: 20%;
     }
+}
+
+.banner{
+    color: #325C74;
+    text-align: center;
+    font-size: 12vh;
+    font-weight: 550;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+    background-color: #ffffff;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/overlay.png");
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/overlay.png");
+    background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/overlay.png");
+    background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/overlay.png");
+
+}
+.banner-text{
+    font-size: 3vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.white{
+    height: 5vh;
+    background-color: white;
 }
