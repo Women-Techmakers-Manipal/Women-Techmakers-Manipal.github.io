@@ -3,10 +3,11 @@
 
 
 
+
 /*
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Identity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 
@@ -163,6 +164,30 @@ textarea {
     appearance: none;
 }
 
+.navbar {
+    height: 15vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar img {
+    width: 30%;
+}
+
+.social-links {
+
+    float: right;
+    display: inline-flex;
+    width: 10%;
+    margin-top: 1vh;
+    margin-right: 10%;
+}
+
+.social-links a {
+    display: inline-flex;
+    font-size: 4vh;
+    padding: 20%;
+}
 
 
 /* Basic */
@@ -242,6 +267,7 @@ body:after {
 body.is-preload:after {
     opacity: 1;
 }
+
 
 
 
@@ -387,6 +413,7 @@ hr {
     border-bottom: solid 1px #c8cccf;
     margin: 3em 0;
 }
+
 
 
 
@@ -635,6 +662,7 @@ input[type="radio"]+label:before {
 
 
 
+
 /* Icon */
 
 .icon {
@@ -655,6 +683,7 @@ input[type="radio"]+label:before {
 .icon>.label {
     display: none;
 }
+
 
 
 
@@ -707,6 +736,7 @@ dl dt {
 dl dd {
     margin-left: 1.5em;
 }
+
 
 
 
@@ -833,6 +863,7 @@ ul.actions.fit.stacked {
 
 
 
+
 /* Icons */
 
 ul.icons {
@@ -902,6 +933,7 @@ ul.icons li a:hover {
         font-size: 1.5rem;
     }
 }
+
 
 
 
@@ -999,6 +1031,7 @@ button:disabled,
 
 
 
+
 /* Main */
 
 .main {
@@ -1078,6 +1111,7 @@ body.is-preload .main {
 
 
 
+
 /* Footer */
 
 #footer {
@@ -1110,6 +1144,7 @@ body.is-preload .main {
 #footer .copyright li:first-child {
     border-left: 0;
 }
+
 
 
 
@@ -1266,7 +1301,32 @@ body.is-ie #wrapper {
 @media screen and (max-width: 700px) {
 
     .about {
-    	font-size: 2.5vh;
+        font-size: 2.5vh;
+    }
+
+    .navbar {
+        height: 10vh;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .navbar img {
+        width: 60%;
+        margin-top: 1.5vh;
+    }
+
+    .social-links {
+
+        float: right;
+        display: inline-flex;
+        /*width: 10%;*/
+        margin-top: 2.5vh;
+        margin-right: 18%;
+    }
+
+    .social-links a {
+        display: inline-flex;
+        font-size: 3vh;
+        padding: 20%;
     }
 }
-
